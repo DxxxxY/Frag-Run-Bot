@@ -1,11 +1,13 @@
 # Frag-Run-Bot
 A mineflayer based bot that can start solo dungeons.
+> Use at your own risk
 
 ## Requirements
 Node.js: https://nodejs.org/en/
+Git: https://git-scm.com/
 
 ## How to use
-1. Clone this repository.
+1. Clone this repository. (`git clone https://github.com/DxxxxY/Frag-Run-Bot.git`)
 2. Open a cmd inside the folder.
 3. Type `npm i` (installs the libraries).
 3. Type `node . <mc email> <mc password>` (starts the bot).
