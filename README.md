@@ -4,6 +4,7 @@ A mineflayer based bot that can start solo dungeons.
 
 ## Requirements
 Node.js: https://nodejs.org/en/
+
 Git: https://git-scm.com/
 
 ## How to use
