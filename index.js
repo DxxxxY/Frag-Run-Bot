@@ -2,18 +2,22 @@ const mineflayer = require('mineflayer')
 
 const options = {
     host: 'mc.hypixel.net',
+    auth: 'microsoft',
     username: process.argv[2],
-    password: process.argv[3]
+    version: '1.8.9'
 }
 
 const bot = mineflayer.createBot(options)
 var client
 
-bot.on('spawn', () => { console.log(`Successfully connected to ${options.host} as ${bot.username}`) })
+bot.on('spawn', () => {
+    console.log(`Successfully connected to ${options.host} as ${bot.username}`)
+    
+})
 
 bot.on('message', msg => {
     let text = msg.getText()
-    if (text.includes("❤") && text.includes("❈") && text.includes("✎")) return //Ignore action bar 
+    if (text.includes("❤") && text.includes("❈") && text.includes("✎")) return
     if (text.includes("has invited you to join their party!")) {
         if (text.includes("]")) client = text.substring(text.indexOf("]") + 2, text.indexOf("has") - 1)
         else client = text.substring(0, text.indexOf("has") - 1)
